@@ -1,0 +1,118 @@
+.header {
+    padding: 5px;
+    text-align: center;
+    background: #FDB3B3;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    opacity: 100%;
+    width: 75%;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #fff;
+    text-shadow: 0.2rem 0.2rem rgb(104, 93, 93);
+    font-family: "Roboto";
+    margin: auto;
+}
+
+.calender-header {
+  padding: 5px;
+  text-align: center;
+  font-family: "Roboto";
+  margin: auto;
+}
+
+.wrapper {
+  display: inline-flex;
+    justify-content: center; 
+    align-items: center; 
+    --padding-x: 200em;
+}
+
+.button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.button__arrow {
+  background-color: none;
+  height: 12px;
+  width: 12px;
+}
+
+.button__arrow--left {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  transform: translateX(25%) rotate(45deg);
+}
+
+.button__arrow--right {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  transform: translateX(-25%) rotate(45deg);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 700px 580px auto;
+    padding: 20px;
+    grid-gap: 50px;
+    justify-content: center;
+  }
+
+.today {
+  background-color: aquamarine;
+}
+
+  .dayCell {
+    font-family: "Roboto";
+    font-weight: bold;
+    width: calc(100%/7);
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #fff;
+    border-radius: 10px;
+    font-family: "Roboto";
+    font-weight: bold;
+  }
+
+  .add-task {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    
+  }
+
+  .row {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0.5px;
+  }
+
+  .row > .cell {
+float: left;
+width: calc(100%/7);
+border: 2px solid black;
+box-sizing: border-box;
+min-height: 80px;
+font-family: "Roboto";
+font-weight: bold;
+padding: 0.5px;
+font-size: 13px;
+text-align: left;
+box-shadow: 0.1rem 0.1rem black;
+text-indent: 5px;
+border-radius: 5px;
+  }

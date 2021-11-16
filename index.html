@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en-gb">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>To Do Tasks.</h1>
+        <div class="wrapper">
+            <button class="button" onclick="minusDay()">
+                <div class="button__arrow button__arrow--left"></div>
+            </button>
+            <p id="selectedDay"></p>
+            <button class="button" onclick="addDay()">
+                <div class="button__arrow button__arrow--right"></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="calender-header">
+                <div class="wrapper">
+                    <button class="button" onclick="minusMonth()">
+                        <div class="button__arrow button__arrow--left"></div>
+                    </button>
+                    <p id="selectedMonth"></p>
+                    <button class="button" onclick="addMonth()">
+                        <div class="button__arrow button__arrow--right"></div>
+                    </button>
+                </div>
+            </div>
+            <div id="calendar">
+            </div>
+        </div>
+        <div class="grid-item">New Task.
+            <div class="add-task trades">
+                <form>
+                    <label for="title">Title</label><br>
+                    <input type="text" id="title"><br>
+                    <label for="description">Description</label><br>
+                    <input type="text" id="description"><br>
+                    <label for="time">Time</label><br>
+                    <input type="time" id="time">
+                </form>
+                <div>
+                    <button type="button" onclick="addTask()">Add.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src='moment-with-locales.js'></script>
+    <script src='tasks.js'></script>
+    <script src='calander.js'></script>
+</body>
+
+</html>
